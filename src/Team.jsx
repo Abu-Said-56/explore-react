@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import './User.css'
 export default function Team(){
     
     const [count,setCount] = useState(11);
@@ -12,7 +12,7 @@ export default function Team(){
         setCount(newCount);
     }
     return(
-        <div style={{border:'3px solid tomato'}}>
+        <div className="user">
             <h2>Player : {count}</h2>
             <button onClick={addCount}>AddCount</button>
             <button onClick={RemoveCount}>RemoveCount</button>

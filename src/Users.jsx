@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import User from "./User";
+import './User.css'
 
 export default function Users(){
     const [users,setUsers] = useState([]);
@@ -10,7 +11,7 @@ export default function Users(){
         .then(data =>setUsers(data))
     },[])
     return(
-        <div style={{border:'3px solid blue'}}>
+        <div className="user">
             <h3>user length:{users.length}</h3>
             
             {
